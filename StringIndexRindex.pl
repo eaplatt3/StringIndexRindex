@@ -31,22 +31,29 @@ $fIndex = index $lString, $sString;
 
 $fRindex = rindex $lString, $sString;
 
+print "\n"; 
+print "fIndex " . $fIndex;
+print "\n";
+print "fRindex " . $fRindex;
+
 #Check if Substring exists
 if($fIndex == -1){
 	print "\n";
 	print $sString . " Is not in the Sentence";
 	print "\n";
 	}
-	else
+	else{
 		print $sString . " Is in the Sentence";
+		}
 		
 if($fRindex == -1){
 	print "\n";
 	print $sString . " Is not in the Sentence";
 	print "\n";
 	}
-	else
+	else{
 		print $sString . "Is in the sentence";
+		}
 	
 
  
