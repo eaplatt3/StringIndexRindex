@@ -8,3 +8,45 @@
 # Output - Comparsion of the two
 #          Strings
 ####################################
+
+use strict;
+use warnings;
+
+#Variables 
+my $lString;
+my $sString;
+my $fIndex;
+my $fRindex;
+
+#User Input
+print "\n";
+print "Enter a Sentence: ";
+$lString = <STDIN>;
+print "\n";
+print "Enter a Word: ";
+$sString = <STDIN>;
+
+#Finding the Substring
+$fIndex = index $lString, $sString;
+
+$fRindex = rindex $lString, $sString;
+
+#Check if Substring exists
+if($fIndex == -1){
+	print "\n";
+	print $sString . " Is not in the Sentence";
+	print "\n";
+	}
+	else
+		print $sString . " Is in the Sentence";
+		
+if($fRindex == -1){
+	print "\n";
+	print $sString . " Is not in the Sentence";
+	print "\n";
+	}
+	else
+		print $sString . "Is in the sentence";
+	
+
+ 
